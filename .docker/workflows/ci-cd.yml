@@ -78,7 +78,7 @@ jobs:
           # Run new container
           docker run -d \
             --name flask-app \
-            -p 80:5000 \
+            -p 80:5001 \
             --restart unless-stopped \
             ${{ secrets.DOCKERHUB_USERNAME }}/cicd-flask:latest
           
